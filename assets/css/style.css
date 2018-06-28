@@ -1,0 +1,12 @@
+.h1 {
+    text-align: center;
+}
+
+.col-6 h5 {
+    font-size: 15px;
+    
+}
+
+.row #yourScore {
+    border: black 1px;
+}

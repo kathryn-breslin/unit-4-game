@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystals Collector</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Crystal Collector</h1> <!--Put image here-->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <h5>You will be given a random number at the start of the game.</h5>
+            <h5>There are four crystals below. By clicking on a crystal you will add a specific amount
+                of points to your total score.</h5>
+            <h5>You wil the game by matching your total score to the random number,
+                you lose the game if your total score goes above the random number. </h5>
+            <h5>The value of each crystal is hidden from you until you click on it.</h5>
+            <h5>Each time when the game starts, the game will change the values of each crystal.</h5>
+        </div>
+        <div class="col-6"></div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <h3 id="randomNumber"></h3>
+        </div>
+        <div class="col-3">
+            <h4 id="scoreMessage"></h4>
+            <h4 id="wins">Wins: </h4>
+            <h4 id="losses">Losses: </h4>
+        </div>
+        <div class="col-5"></div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <img src="assets/images/crytal_1.png" id="crystalOne" class="crystal-image"  height="200" width="250"> 
+        </div>
+        <div class="col-3">
+            <img src="assets/images/crystal_2.png" id="crystalTwo" class="crystal-image" height="200" width="250">   
+        </div>
+        <div class="col-3">
+            <img src="assets/images/crystal-3.png" id="crystalThree" class="crystal-image" height="200" width="250">
+        </div>
+        <div class="col-3">
+            <img src="assets/images/crystal-4.png" id="crystalFour"  class="crystal-image" height="200" width="250">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <h5>Your Score Is:</h5>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <h3 id="yourScore"></h3>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+    </div>
+</div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
+</body>
+</html>
