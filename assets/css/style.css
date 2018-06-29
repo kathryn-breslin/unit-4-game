@@ -11,28 +11,56 @@
 
 #header {
     border-bottom: solid black 1px;
-}
-
-.secondArea {
-    padding: 20px;
+    margin-bottom: 30px;
 }
 .col-6 h5 {
     font-size: 15px;
     margin: 20px;
 }
 
-.paragraph {
-    margin-top: 40px;
-}
-.numberToGuess{
-    margin-top: 40px;
+#secondArea {
+    border: black solid 1px;
 }
 
-.scoreCard {
-    margin-top: 40px;
+#secondArea p {
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 3;
 }
-.row #yourScore {
-    border: black 1px;
+
+#randomNumber {
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    line-height: 3;
+    margin-left: 80px;
+}
+
+#yourScore {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+ #wins {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+#losses {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.yourScoreIs {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+#scoreMessage {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 
  #crystals {

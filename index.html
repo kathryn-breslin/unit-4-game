@@ -7,6 +7,7 @@
     <title>Crystals Collector</title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
 </head>
 <body>
@@ -16,59 +17,32 @@
             <h1>Crystal Collector</h1> <!--Put image here-->
         </div>
     </div>
-    <div class="row" class="secondArea">
+    <div class="row" id="secondArea">
         <div class="col-6" class="paragraph">
-            <h5>You will be given a random number at the start of the game.</h5>
-            <h5>There are four crystals below. By clicking on a crystal you will add a specific amount
-                of points to your total score.</h5>
-            <h5>You wil the game by matching your total score to the random number,
-                you lose the game if your total score goes above the random number. </h5>
-            <h5>The value of each crystal is hidden from you until you click on it.</h5>
-            <h5>Each time when the game starts, the game will change the values of each crystal.</h5>
+            <p>You will be given a random number at the start of the game. 
+                There are four crystals below. 
+                By clicking on a crystal you will add a specific amount
+                of points to your total score. You wil the game by matching your total score to the random number,
+                you lose the game if your total score goes above the random number. 
+                The value of each crystal is hidden from you until you click on it. 
+                Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
         <div class="col-3" class="numberToGuess">
                 <h3 id="randomNumber"></h3>
         </div>
         <div class="col-3" class="scoreCard">
-                <h4 id="scoreMessage"></h4>
-                <h4 id="wins"></h4>
-                <h4 id="losses"></h4>
+                <h3 id="wins"></h3>
+                <h3 id="losses"></h3>
+                <h3 id="scoreMessage"></h3>
+                <br>
+                <h3 class="yourScoreIs"></h3>
+                <h3 id="yourScore"></h3>
         </div>
     </div>
-    
-   <!--<div class="row">
-        <div class="col-3">
-            <img src="assets/images/crytal_1.png" id="crystalOne" class="crystal-image"  height="200" width="250"> 
-        </div>
-        <div class="col-3">
-           <img src="assets/images/crystal_2.png" id="crystalTwo" class="crystal-image" height="200" width="250">   
-        </div>
-        <div class="col-3">
-            <img src="assets/images/crystal-3.png" id="crystalThree" class="crystal-image" height="200" width="250">
-        </div>
-        <div class="col-3">
-            <img src="assets/images/crystal-4.png" id="crystalFour"  class="crystal-image" height="200" width="250">
-        </div> 
-    </div> -->
 
     <div class="row">
         <div class="col-12" id="crystals">
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col-4">
-            <h5 class="yourScoreIs"></h5>
-        </div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <h3 id="yourScore"></h3>
-        </div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
     </div>
 </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
