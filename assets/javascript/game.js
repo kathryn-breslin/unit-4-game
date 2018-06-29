@@ -54,6 +54,16 @@ $('.crystal-image').on('click', function() {
  
     })
 
+$(function () {
+    $('.crystal-image').css('opacity', '1.0');
+    $('.crystal-image').hover(function () {
+    $(this).stop().animate({opacity: 0.75}, "fast");
+    },
+        function() {
+        $(this).stop().animate({opacity: 1.0}, "fast");
+    });
+});
+
 //Resetting the game
 
 function reset() {

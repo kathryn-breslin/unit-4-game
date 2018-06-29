@@ -1,3 +1,4 @@
+
 .col-12 h1 {
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
@@ -5,12 +6,8 @@
     margin-top: 30px;
 }
 
-.container {
-    margin: 40px;
-}
-
 #header {
-    border-bottom: solid black 1px;
+    border-bottom: solid black 3px;
     margin-bottom: 30px;
 }
 .col-6 h5 {
@@ -20,6 +17,8 @@
 
 #secondArea {
     border: black solid 1px;
+    margin: 50px;
+    width: 1050px;
 }
 
 #secondArea p {
@@ -30,16 +29,18 @@
 }
 
 #randomNumber {
-    margin-top: 15px;
+    margin-top: 50px;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     line-height: 3;
     margin-left: 80px;
+    font-weight: bold;
 }
 
 #yourScore {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
+    font-weight: bold;
 }
 
  #wins {
@@ -60,11 +61,16 @@
 
 #scoreMessage {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
- #crystals {
-    margin-top: 30px;
+ #crystalsArea{
+    margin: 50px;
     height: 250;
-    width: 250;
+    border: solid black 1px;
+    width: 1050px;
+
 }
