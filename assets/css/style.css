@@ -1,12 +1,42 @@
-.h1 {
+.col-12 h1 {
     text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    margin-bottom: 70px;
+    margin-top: 30px;
 }
 
+.container {
+    margin: 40px;
+}
+
+#header {
+    border-bottom: solid black 1px;
+}
+
+.secondArea {
+    padding: 20px;
+}
 .col-6 h5 {
     font-size: 15px;
-    
+    margin: 20px;
 }
 
+.paragraph {
+    margin-top: 40px;
+}
+.numberToGuess{
+    margin-top: 40px;
+}
+
+.scoreCard {
+    margin-top: 40px;
+}
 .row #yourScore {
     border: black 1px;
+}
+
+ #crystals {
+    margin-top: 30px;
+    height: 250;
+    width: 250;
 }

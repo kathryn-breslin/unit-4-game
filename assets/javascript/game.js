@@ -9,30 +9,78 @@
 //declare variables 
 $(document).ready(function() {
 
-wins = 0;
-losses = 0;
+setRandomNumber ();
+wins = 1;
+losses = 1;
 yourScore = 0;
 
-var randomNumber = Math.floor(Math.random () * 121);
+$('#wins').text("Wins: ");
+$('#losses').text("Losses: ");
+$('.yourScoreIs').text("Your Score Is: ");
+$('#yourScore').text("Score");
+
+function setRandomNumber() {
+    randomNumber = Math.floor(Math.random () * 121);
     console.log(randomNumber);
     $('#randomNumber').text(randomNumber);
-    
+}
+
 var crystalNumbers = [12, 1, 6, 5];
 
 for (var i = 0; i < crystalNumbers.length; i++) {
-    crystalImage = $('.crystal-image');
-    crystalImage.attr("data-crystalvalue", crystalNumbers[i]);
-   
+   // crystalImage = $('.crystal-image');
+   // crystalImage.attr("data-crystalvalue", crystalNumbers[i]);
+    
+   var crystalImage = $("<img>");
+        crystalImage.addClass("crystal-image");
+        crystalImage.attr("src", './assets/images/crytal_1.png');
+        crystalImage.height('250px');
+        crystalImage.width('250px');
+        crystalImage.attr("data-crystalvalue", crystalNumbers[i]);
+        $("#crystals").append(crystalImage);
 }
 
 $('.crystal-image').on('click', function() {
     crystalValue = ($(this).attr("data-crystalvalue"));
     crystalValue = parseInt(crystalValue);
     yourScore += crystalValue;
-    $('#yourScore').text(crystalValue);
-    console.log(crystalValue);
-})
+    $('#yourScore').text(yourScore);
 
+    if (yourScore === randomNumber) {
+        $('#wins').html("Wins: " + wins++);
+        $('#scoreMessage').text("You win!");
+        reset();
+     }
+    
+     else if (yourScore >= randomNumber) {
+        $('#losses').html("Losses: " + losses++);
+         $('#scoreMessage').text("You lost!");
+         reset();
+        }
+ 
+    })
+
+function reset() {
+    yourScore = 0;
+    setRandomNumber ();
+    $('#yourScore').html('');
+    $('#randomNumber').text(randomNumber);
+    $('#scoreMessage').html('');
+}
 
 });
-//Create buttons with click functions
+
+
+//Resetting the game
+
+
+
+//});
+
+//Resetting the game
+
+
+//$('.yourScoreIs').html("<h5> Your Score Is: </h5>");
+//$('#yourScore').html("<h3>" + yourScore + "</h3>");
+//$('#wins').html("<h4> Wins: " + wins + "</h4>");
+//$('#losses').html("<h4> Losses: ") + losses + "</h4>");
