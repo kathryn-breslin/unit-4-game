@@ -14,7 +14,7 @@ $('#yourScore').text("Score");
 
 //Random number
 function setRandomNumber() {
-    randomNumber = Math.floor(Math.random () * 121);
+    randomNumber = Math.floor(Math.random () * (120 - 19 + 1)+ 19);
     console.log(randomNumber);
     $('#randomNumber').text(randomNumber);
 }

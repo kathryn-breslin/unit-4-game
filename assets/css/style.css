@@ -19,6 +19,7 @@
     border: black solid 1px;
     margin: 50px;
     width: 1050px;
+    float: none;
 }
 
 #secondArea p {
@@ -68,9 +69,53 @@
 }
 
  #crystalsArea{
-    margin: 50px;
+    margin-left: 50px;
     height: 250;
     border: solid black 1px;
     width: 1050px;
 
+}
+
+@media screen and (max-width: 1000px) { 
+    #secondArea {
+        width: 75%;
+        margin: 30px;
+        height: 75%;;
+    }
+
+    #crystalsArea {
+        width: 75%;
+        margin: 30px;
+        height: 75%;;  
+    }
+
+}
+
+@media screen and (max-width: 768px) { 
+    #secondArea {
+        width: 75%;
+        margin: 30px;
+        height: 75%;;
+    }
+
+    #crystalsArea {
+        width: 75%;
+        margin: 30px;
+        height: 75%;;  
+    }
+
+}
+
+@media screen and (max-width: 640px) { 
+    #secondArea {
+        width: 75%;
+        margin: 30px;
+        height: 75%;;
+    }
+
+    #crystalsArea {
+        width: 75%;
+        margin: 30px;
+        height: 75%;;  
+    }
 }
