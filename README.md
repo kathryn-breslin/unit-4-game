@@ -9,3 +9,4 @@ Each crystal is given a random value at the beginning of each round. The user's 
 
 
 
+![Crystal Game Image](game_screenshot.png)
